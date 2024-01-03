@@ -20,7 +20,7 @@
   "storybookCompatibility": {
     "testStories": true,
   },
-  "libraries": {
+  "packages": {
     "@radix-ui/number": {
       "rootDirectory": "packages/core/number",
       "sourceDirectory": "packages/core/number/src",
