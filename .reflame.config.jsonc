@@ -21,6 +21,17 @@
     "testStories": true,
   },
   "libraries": {
+    "@radix-ui/number": {
+      "rootDirectory": "packages/core/number",
+      "sourceDirectory": "packages/core/number/src",
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
     "@radix-ui/rect": {
       "rootDirectory": "packages/core/rect",
       "sourceDirectory": "packages/core/rect/src",
@@ -31,7 +42,29 @@
           }
         }
       }
-    }
+    },
+    "@radix-ui/primitive": {
+      "rootDirectory": "packages/core/primitive",
+      "sourceDirectory": "packages/core/primitive/src",
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-accessible-icon": {
+      "rootDirectory": "packages/react/accessible-icon",
+      "sourceDirectory": "packages/react/accessible-icon/src",
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
   },
   // NPM packages listed here will be installed by Reflame every time you update this file.
   // 
