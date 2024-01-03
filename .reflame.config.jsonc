@@ -65,6 +65,17 @@
         }
       }
     },
+    "@radix-ui/react-visually-hidden": {
+      "rootDirectory": "packages/react/visually-hidden",
+      "sourceDirectory": "packages/react/visually-hidden/src",
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
   },
   // NPM packages listed here will be installed by Reflame every time you update this file.
   // 
