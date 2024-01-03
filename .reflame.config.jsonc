@@ -76,6 +76,39 @@
         }
       }
     },
+    "@radix-ui/react-primitive": {
+      "rootDirectory": "packages/react/primitive",
+      "sourceDirectory": "packages/react/primitive/src",
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-slot": {
+      "rootDirectory": "packages/react/slot",
+      "sourceDirectory": "packages/react/slot/src",
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-compose-refs": {
+      "rootDirectory": "packages/react/compose-refs",
+      "sourceDirectory": "packages/react/compose-refs/src",
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
   },
   // NPM packages listed here will be installed by Reflame every time you update this file.
   // 
