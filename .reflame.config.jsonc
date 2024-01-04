@@ -1,6 +1,6 @@
 {
   // This is a JSON with Comments file.
-  // It's basically JSON, with the addition of comments, and looser syntax 
+  // It's basically JSON, with the addition of comments, and looser syntax
   // (trailing commas!).
   // Reflame uses this to identify your app.
   // "appId": "01HK6FPAM5H8B420741VMXDK46", // prod
@@ -10,17 +10,24 @@
   // This is the description that shows up in Google search.
   "description": "A new Reflame app.",
   // Reflame will watch this directory for your React source code and deploy changes
-  // instantly. 
+  // instantly.
   "sourceDirectory": "app",
-  // Reflame will use this to keep your app up to date as we make improvements. 
+  // Reflame will use this to keep your app up to date as we make improvements.
   "foundation": {
     "name": "ts-react",
-    "version": 2,
+    "version": 2
   },
   "storybookCompatibility": {
-    "testStories": true,
+    "testStories": true
   },
   "packages": {
+    "testing": {
+      "rootDirectory": "testing",
+      "sourceDirectory": "testing/src",
+      "nodejsCompatibility": {
+        "packageJson": true
+      }
+    },
     "@radix-ui/number": {
       "rootDirectory": "packages/core/number",
       "sourceDirectory": "packages/core/number/src",
@@ -647,15 +654,15 @@
           }
         }
       }
-    },
+    }
   },
   // NPM packages listed here will be installed by Reflame every time you update this file.
-  // 
+  //
   // It's important to only include packages that will be used by your app in browsers here.
   // Including dev-time dependencies that run in node can result in deploy failures and poor
   // performance.
   "npmPackages": {
     // // Specify npm packages in the same format as you would with package.json
     // "framer-motion": "^6.2.8",
-  },
+  }
 }

@@ -17873,6 +17873,14 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
+"testing@workspace:testing":
+  version: 0.0.0-use.local
+  resolution: "testing@workspace:testing"
+  dependencies:
+    "@stitches/core": ^1.2.8
+  languageName: unknown
+  linkType: soft
+
 "text-table@npm:^0.2.0":
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"

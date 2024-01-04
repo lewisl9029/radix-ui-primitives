@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
-import { css, keyframes } from '../../../../stitches.config';
+import { css, keyframes } from 'testing/stitches.config';
 import * as Toast from '@radix-ui/react-toast';
 
 export default { title: 'Components/Toast' };

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { css } from '../../../../stitches.config';
+import { css } from 'testing/stitches.config';
 import { Separator } from '@radix-ui/react-separator';
 
 export default { title: 'Components/Separator' };

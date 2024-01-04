@@ -1,0 +1,11 @@
+{
+  "name": "testing",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./stitches.config": "./src/stitches.config.ts"
+  },
+  "dependencies": {
+    "@stitches/core": "^1.2.8"
+  }
+}

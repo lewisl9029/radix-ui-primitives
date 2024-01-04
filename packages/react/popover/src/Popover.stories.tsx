@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { css, keyframes } from '../../../../stitches.config';
+import { css, keyframes } from 'testing/stitches.config';
 import { SIDE_OPTIONS, ALIGN_OPTIONS } from '@radix-ui/react-popper';
 import * as Popover from '@radix-ui/react-popover';
 

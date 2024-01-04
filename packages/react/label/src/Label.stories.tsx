@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { css } from '../../../../stitches.config';
+import { css } from 'testing/stitches.config';
 import { Label } from '@radix-ui/react-label';
 
 export default { title: 'Components/Label', excludeStories: ['RECOMMENDED_CSS__LABEL__ROOT'] };

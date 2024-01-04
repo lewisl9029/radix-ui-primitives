@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { css, keyframes } from '../../../../stitches.config';
+import { css, keyframes } from 'testing/stitches.config';
 import { Label as LabelPrimitive } from '@radix-ui/react-label';
 import { RECOMMENDED_CSS__LABEL__ROOT } from '../../label/src/Label.stories';
 import { DirectionProvider } from '@radix-ui/react-direction';
