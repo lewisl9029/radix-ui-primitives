@@ -2,7 +2,7 @@ import * as React from 'react';
 import { DirectionProvider } from '@radix-ui/react-direction';
 import { css } from 'testing/stitches.config';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
-import { classes } from '../../menu/src/Menu.stories';
+import { classes } from 'testing/menu';
 import { Toggle } from '@radix-ui/react-toggle';
 import * as Toolbar from '@radix-ui/react-toolbar';
 

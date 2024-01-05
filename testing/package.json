@@ -4,7 +4,9 @@
   "private": true,
   "exports": {
     "./stitches.config": "./src/stitches.config.ts",
-    "./foods": "./src/foods.ts"
+    "./foods": "./src/foods.ts",
+    "./label": "./src/label.ts",
+    "./menu": "./src/menu.tsx"
   },
   "dependencies": {
     "@stitches/core": "^1.2.8"

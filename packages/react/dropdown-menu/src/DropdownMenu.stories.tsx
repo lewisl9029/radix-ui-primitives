@@ -6,7 +6,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { SIDE_OPTIONS, ALIGN_OPTIONS } from '@radix-ui/react-popper';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { foodGroups } from 'testing/foods';
-import { classes, TickIcon } from '../../menu/src/Menu.stories';
+import { classes, TickIcon } from 'testing/menu';
 
 const { contentClass, itemClass, labelClass, separatorClass, subTriggerClass } = classes;
 
