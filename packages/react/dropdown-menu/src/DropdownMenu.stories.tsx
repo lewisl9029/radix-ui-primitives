@@ -5,7 +5,7 @@ import * as Tooltip from '@radix-ui/react-tooltip';
 import * as Dialog from '@radix-ui/react-dialog';
 import { SIDE_OPTIONS, ALIGN_OPTIONS } from '@radix-ui/react-popper';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
-import { foodGroups } from '../../../../test-data/foods';
+import { foodGroups } from 'testing/foods';
 import { classes, TickIcon } from '../../menu/src/Menu.stories';
 
 const { contentClass, itemClass, labelClass, separatorClass, subTriggerClass } = classes;

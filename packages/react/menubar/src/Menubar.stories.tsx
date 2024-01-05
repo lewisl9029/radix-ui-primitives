@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as Menubar from '@radix-ui/react-menubar';
 import { css } from 'testing/stitches.config';
 import { classes, TickIcon } from '../../menu/src/Menu.stories';
-import { foodGroups } from '../../../../test-data/foods';
+import { foodGroups } from 'testing/foods';
 
 const { contentClass, itemClass, separatorClass, labelClass, subTriggerClass } = classes;
 

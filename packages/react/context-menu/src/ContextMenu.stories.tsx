@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { css, keyframes } from 'testing/stitches.config';
 import * as ContextMenu from '@radix-ui/react-context-menu';
-import { foodGroups } from '../../../../test-data/foods';
+import { foodGroups } from 'testing/foods';
 import { classes, TickIcon } from '../../menu/src/Menu.stories';
 
 const { contentClass, itemClass, labelClass, separatorClass, subTriggerClass } = classes;
