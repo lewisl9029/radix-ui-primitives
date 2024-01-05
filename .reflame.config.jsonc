@@ -235,6 +235,9 @@
             "ignoreTopLevelDirectory": true
           }
         }
+      },
+      "npmPackages": {
+        "react-remove-scroll": "2.5.5"
       }
     },
     "@radix-ui/react-dropdown-menu": {
@@ -477,6 +480,9 @@
             "ignoreTopLevelDirectory": true
           }
         }
+      },
+      "npmPackages": {
+        "form-serialize": "^0.7.2"
       }
     },
     "@radix-ui/react-slot": {
