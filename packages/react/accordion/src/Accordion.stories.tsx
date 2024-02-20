@@ -10,7 +10,7 @@ export const Single = () => {
 
   return (
     <>
-      <h1>Uncontrolled</h1>
+      <h1>Hi!</h1>
       <Accordion.Root type="single" className={rootClass()}>
         <Accordion.Item className={itemClass()} value="one">
           <Accordion.Header className={headerClass()}>
