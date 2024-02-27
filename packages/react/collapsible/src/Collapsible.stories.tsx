@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { css, keyframes } from 'testing/stitches.config';
 import * as Collapsible from '@radix-ui/react-collapsible';
+import { ComponentTest } from '@reflame/testing';
 
 export default { title: 'Components/Collapsible' };
 
@@ -11,7 +12,7 @@ export const Styled = () => (
   </Collapsible.Root>
 );
 
-export const Controlled = () => {
+export const Controlled: ComponentTest = () => {
   const [open, setOpen] = React.useState(false);
   return (
     <Collapsible.Root open={open} onOpenChange={setOpen} className={rootClass()}>
