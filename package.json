@@ -177,12 +177,6 @@
     "node_modules",
     "dist"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && lint-staged",
-      "pre-push": "yarn types:check && yarn bump:check"
-    }
-  },
   "lint-staged": {
     "*.{js,ts,tsx}": "eslint --quiet --fix --cache"
   }
