@@ -16,13 +16,18 @@ export const Controlled = () => {
   return (
     <Collapsible.Root open={open} onOpenChange={setOpen} className={rootClass()}>
       <Collapsible.Trigger className={triggerClass()}>
-        {open ? 'close' : 'open???'}
+        {open ? 'close' : 'open'}
       </Collapsible.Trigger>
       <Collapsible.Content className={contentClass()} asChild>
         <article>Content 1</article>
       </Collapsible.Content>
     </Collapsible.Root>
   );
+};
+
+Controlled.run = async ({ user, screen }) => {
+  const trigger = await screen.findByText('open');
+  await user.click(trigger);
 };
 
 export const Animated = () => {
