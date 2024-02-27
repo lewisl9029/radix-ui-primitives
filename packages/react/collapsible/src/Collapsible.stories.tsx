@@ -26,9 +26,11 @@ export const Controlled: ComponentTest = () => {
   );
 };
 
-Controlled.run = async ({ user, screen }) => {
-  const trigger = await screen.findByText('open');
-  await user.click(trigger);
+Controlled.run = async ({ step }) => {
+  await step('Click open', async ({ user, screen }) => {
+    const trigger = await screen.findByText('open');
+    await user.click(trigger);
+  });
 };
 
 export const Animated = () => {
