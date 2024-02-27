@@ -82,7 +82,7 @@ export const Collapsible_test: ComponentTest = () => {
   const [open, setOpen] = React.useState(false);
   return (
     <Root open={open} onOpenChange={setOpen} className={'root'}>
-      <Trigger className={'trigger'}>{open ? 'close' : 'open'}</Trigger>
+      <Trigger className={'trigger'}>{open ? 'close' : 'open???'}</Trigger>
       <Content className={'content'} asChild>
         <article>Content 1</article>
       </Content>
