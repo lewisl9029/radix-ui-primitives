@@ -5,7 +5,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import * as Tooltip from '@radix-ui/react-tooltip';
 
 export default { title: 'Components/Tooltip' };
-console.log('1');
+console.log('4');
 export const Styled = () => (
   <Tooltip.Provider>
     <Tooltip.Root>
