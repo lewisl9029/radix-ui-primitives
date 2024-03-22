@@ -1,6 +1,6 @@
 {
   "name": "@radix-ui/react-select",
-  "version": "2.0.0",
+  "version": "2.0.1-rc.11",
   "license": "MIT",
   "exports": {
     ".": {
@@ -49,7 +49,7 @@
     "@radix-ui/react-use-previous": "workspace:*",
     "@radix-ui/react-visually-hidden": "workspace:*",
     "aria-hidden": "^1.1.1",
-    "react-remove-scroll": "2.5.5"
+    "react-remove-scroll": "2.5.7"
   },
   "peerDependencies": {
     "@types/react": "*",
@@ -72,5 +72,6 @@
   },
   "bugs": {
     "url": "https://github.com/radix-ui/primitives/issues"
-  }
+  },
+  "stableVersion": "2.0.0"
 }

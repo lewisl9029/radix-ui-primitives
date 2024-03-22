@@ -22,6 +22,15 @@ export const WithControl = () => {
   );
 };
 
+export const WithInputNumber = (props: any) => {
+  return (
+    <Label>
+      <span>Name:</span>
+      <input type="number" />
+    </Label>
+  );
+};
+
 const Control = (props: any) => {
   return (
     <button className={controlClass()} {...props} onClick={() => window.alert('clicked')}>

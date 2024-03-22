@@ -1,6 +1,6 @@
 {
   "name": "@radix-ui/react-popover",
-  "version": "1.0.7",
+  "version": "1.0.8-rc.8",
   "license": "MIT",
   "exports": {
     ".": {
@@ -43,7 +43,7 @@
     "@radix-ui/react-slot": "workspace:*",
     "@radix-ui/react-use-controllable-state": "workspace:*",
     "aria-hidden": "^1.1.1",
-    "react-remove-scroll": "2.5.5"
+    "react-remove-scroll": "2.5.7"
   },
   "peerDependencies": {
     "@types/react": "*",
@@ -66,5 +66,6 @@
   },
   "bugs": {
     "url": "https://github.com/radix-ui/primitives/issues"
-  }
+  },
+  "stableVersion": "1.0.7"
 }
