@@ -4,7 +4,7 @@ import * as Avatar from '@radix-ui/react-avatar';
 
 export default { title: 'Components/Avatar' };
 
-console.log('11');
+console.log('12');
 
 const src = 'https://picsum.photos/id/1005/400/400';
 const srcBroken = 'https://broken.link.com/broken-pic.jpg';
