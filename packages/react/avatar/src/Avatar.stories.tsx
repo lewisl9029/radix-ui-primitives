@@ -38,7 +38,6 @@ export const Styled = () => (
 );
 Styled.options = {
   delay: 1000,
-  ignoreNetworkErrors: true,
 };
 
 export const Chromatic = () => (
@@ -66,9 +65,6 @@ export const Chromatic = () => (
   </>
 );
 Chromatic.parameters = { chromatic: { disable: false, delay: 1000 } };
-Chromatic.options = {
-  ignoreNetworkErrors: true,
-};
 
 const RECOMMENDED_CSS__AVATAR__ROOT: any = {
   // ensures image/fallback is centered
