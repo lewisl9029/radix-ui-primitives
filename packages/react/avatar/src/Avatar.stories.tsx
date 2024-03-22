@@ -36,8 +36,8 @@ export const Styled = () => (
     </Avatar.Root>
   </>
 );
-
 Styled.options = {
+  delay: 1000,
   ignoreNetworkErrors: true,
 };
 
