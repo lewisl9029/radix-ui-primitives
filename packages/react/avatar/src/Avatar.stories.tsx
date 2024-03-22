@@ -4,8 +4,6 @@ import * as Avatar from '@radix-ui/react-avatar';
 
 export default { title: 'Components/Avatar' };
 
-console.log('12');
-
 const src = 'https://picsum.photos/id/1005/400/400';
 const srcBroken = 'https://broken.link.com/broken-pic.jpg';
 
@@ -39,6 +37,10 @@ export const Styled = () => (
   </>
 );
 
+Styled.options = {
+  ignoreNetworkErrors: true,
+};
+
 export const Chromatic = () => (
   <>
     <h1>Without image & with fallback</h1>
@@ -64,6 +66,9 @@ export const Chromatic = () => (
   </>
 );
 Chromatic.parameters = { chromatic: { disable: false, delay: 1000 } };
+Chromatic.options = {
+  ignoreNetworkErrors: true,
+};
 
 const RECOMMENDED_CSS__AVATAR__ROOT: any = {
   // ensures image/fallback is centered
