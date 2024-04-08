@@ -32,7 +32,7 @@ const Arrow = React.forwardRef<ArrowElement, ArrowProps>((props, forwardedRef) =
 
 Arrow.displayName = NAME;
 
-export const Arrow_test = () => <Arrow width={16} height={16} />;
+// export const Arrow_test = () => <Arrow width={16} height={16} />;
 
 /* -----------------------------------------------------------------------------------------------*/
 
