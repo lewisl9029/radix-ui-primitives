@@ -13,7 +13,7 @@ export const Styled = () => (
 
 export const Chromatic = () => (
   <p>
-    Some text with an inline accessible icon. Hi!!!!!!!!{' '}
+    Some text with an inline accessible icon. Hi!!!!!!!!!{' '}
     <AccessibleIcon label="Close">
       <CrossIcon />
     </AccessibleIcon>
