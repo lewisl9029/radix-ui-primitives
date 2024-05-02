@@ -90,9 +90,13 @@ export const Collapsible_test: ComponentTest = () => {
   );
 };
 
-Collapsible_test.run = async ({ step }) => {
-  await step('Click open', async ({ user, screen }) => {
+Collapsible_test.run = async ({ step, user, screen }) => {
+  await step('Click open', async () => {
     const trigger = await screen.findByText('open');
+    await user.click(trigger);
+  });
+  await step('Click close', async () => {
+    const trigger = await screen.findByText('close');
     await user.click(trigger);
   });
 };
