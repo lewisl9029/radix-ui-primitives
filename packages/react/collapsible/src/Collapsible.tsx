@@ -78,7 +78,7 @@ const Collapsible = React.forwardRef<CollapsibleElement, CollapsibleProps>(
 
 Collapsible.displayName = COLLAPSIBLE_NAME;
 
-export const Collapsible_test: ComponentTest = () => {
+export const Base = () => {
   const [open, setOpen] = React.useState(false);
   return (
     <Root open={open} onOpenChange={setOpen} className={'root'}>
@@ -90,7 +90,9 @@ export const Collapsible_test: ComponentTest = () => {
   );
 };
 
-Collapsible_test.run = async ({ step, user, screen }) => {
+export const TestCase1_test: ComponentTest = () => <Base />;
+
+TestCase1_test.run = async ({ step, user, screen }) => {
   await step('Click open', async () => {
     const trigger = await screen.findByText('open');
     await user.click(trigger);
