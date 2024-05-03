@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { css } from '../../../../stitches.config';
+import { css } from 'testing/stitches.config';
 import * as Avatar from '@radix-ui/react-avatar';
 
 export default { title: 'Components/Avatar' };
@@ -36,6 +36,9 @@ export const Styled = () => (
     </Avatar.Root>
   </>
 );
+Styled.options = {
+  delay: 1000,
+};
 
 export const Chromatic = () => (
   <>

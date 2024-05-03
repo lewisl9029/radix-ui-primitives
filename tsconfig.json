@@ -2,6 +2,7 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "paths": {
+      "testing/*": ["./testing/src/*"],
       "@radix-ui/number": ["./packages/core/number/src"],
       "@radix-ui/primitive": ["./packages/core/primitive/src"],
       "@radix-ui/rect": ["./packages/core/rect/src"],

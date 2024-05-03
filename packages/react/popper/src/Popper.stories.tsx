@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { css, keyframes } from '../../../../stitches.config';
+import { css, keyframes } from 'testing/stitches.config';
 import { Portal } from '@radix-ui/react-portal';
 import * as Popper from '@radix-ui/react-popper';
 

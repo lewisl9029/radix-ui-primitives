@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { css } from '../../../../stitches.config';
+import { css } from 'testing/stitches.config';
 import { Label } from '@radix-ui/react-label';
+import { RECOMMENDED_CSS__LABEL__ROOT } from 'testing/label';
 
-export default { title: 'Components/Label', excludeStories: ['RECOMMENDED_CSS__LABEL__ROOT'] };
+export default { title: 'Components/Label' };
 
 export const Styled = () => <Label className={rootClass()}>Label</Label>;
 
@@ -36,15 +37,6 @@ const Control = (props: any) => {
       Control
     </button>
   );
-};
-
-export const RECOMMENDED_CSS__LABEL__ROOT = {
-  // ensures it can receive vertical margins
-  display: 'inline-block',
-  // better default alignment
-  verticalAlign: 'middle',
-  // mimics default `label` tag (as we render a `span`)
-  cursor: 'default',
 };
 
 const rootClass = css({

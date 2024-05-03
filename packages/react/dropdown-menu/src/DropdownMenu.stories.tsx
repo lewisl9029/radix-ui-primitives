@@ -1,12 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { css } from '../../../../stitches.config';
+import { css } from 'testing/stitches.config';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import * as Dialog from '@radix-ui/react-dialog';
 import { SIDE_OPTIONS, ALIGN_OPTIONS } from '@radix-ui/react-popper';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
-import { foodGroups } from '../../../../test-data/foods';
-import { classes, TickIcon } from '../../menu/src/Menu.stories';
+import { foodGroups } from 'testing/foods';
+import { classes, TickIcon } from 'testing/menu';
 
 const { contentClass, itemClass, labelClass, separatorClass, subTriggerClass } = classes;
 

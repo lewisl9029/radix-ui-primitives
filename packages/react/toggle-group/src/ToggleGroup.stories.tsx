@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { DirectionProvider } from '@radix-ui/react-direction';
-import { css } from '../../../../stitches.config';
+import { css } from 'testing/stitches.config';
 import * as ToggleGroup from '@radix-ui/react-toggle-group';
 
 export default {

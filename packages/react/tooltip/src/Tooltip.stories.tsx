@@ -1,11 +1,10 @@
 import * as React from 'react';
-import { css, keyframes } from '../../../../stitches.config';
+import { css, keyframes } from 'testing/stitches.config';
 import { SIDE_OPTIONS, ALIGN_OPTIONS } from '@radix-ui/react-popper';
 import * as Dialog from '@radix-ui/react-dialog';
 import * as Tooltip from '@radix-ui/react-tooltip';
 
 export default { title: 'Components/Tooltip' };
-
 export const Styled = () => (
   <Tooltip.Provider>
     <Tooltip.Root>
@@ -805,6 +804,7 @@ export const Chromatic = () => (
         </Tooltip.Portal>
       </Tooltip.Root>
 
+      {/* FIXME: these are not open in screenshots for some reason */}
       <h2 style={{ marginBottom: 60 }}>Open</h2>
       <Tooltip.Root defaultOpen>
         <Tooltip.Trigger className={triggerClass()}>open</Tooltip.Trigger>

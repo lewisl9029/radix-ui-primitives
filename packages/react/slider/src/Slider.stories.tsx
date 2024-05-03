@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { DirectionProvider } from '@radix-ui/react-direction';
-import { css } from '../../../../stitches.config';
+import { css } from 'testing/stitches.config';
 import serialize from 'form-serialize';
 import * as Slider from '@radix-ui/react-slider';
 

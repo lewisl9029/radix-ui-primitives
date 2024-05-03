@@ -10,6 +10,7 @@ import { useId } from '@radix-ui/react-id';
 
 import type * as Radix from '@radix-ui/react-primitive';
 import type { Scope } from '@radix-ui/react-context';
+import { ComponentTest } from '@reflame/testing';
 
 /* -------------------------------------------------------------------------------------------------
  * Collapsible
@@ -76,6 +77,31 @@ const Collapsible = React.forwardRef<CollapsibleElement, CollapsibleProps>(
 );
 
 Collapsible.displayName = COLLAPSIBLE_NAME;
+
+export const Base = () => {
+  const [open, setOpen] = React.useState(false);
+  return (
+    <Root open={open} onOpenChange={setOpen} className={'root'}>
+      <Trigger className={'trigger'}>{open ? 'close' : 'open'}</Trigger>
+      <Content className={'content'} asChild>
+        <article>Content 1</article>
+      </Content>
+    </Root>
+  );
+};
+
+export const TestCase1_test: ComponentTest = () => <Base />;
+
+TestCase1_test.run = async ({ step, user, screen }) => {
+  await step('Click open', async () => {
+    const trigger = await screen.findByText('open');
+    await user.click(trigger);
+  });
+  await step('Click close', async () => {
+    const trigger = await screen.findByText('close');
+    await user.click(trigger);
+  });
+};
 
 /* -------------------------------------------------------------------------------------------------
  * CollapsibleTrigger

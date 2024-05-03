@@ -1,0 +1,845 @@
+{
+  // This is a JSON with Comments file.
+  // It's basically JSON, with the addition of comments, and looser syntax
+  // (trailing commas!).
+  // Reflame uses this to identify your app.
+  "appId": "01HK6FPAM5H8B420741VMXDK46", // prod
+  // "appId": "01HK6GQBN2Q0V570J27TTGYXYJ", // dev
+  // This is what shows up in the browser's tab bar.
+  "title": "Reflame App",
+  // This is the description that shows up in Google search.
+  "description": "A new Reflame app.",
+  // Reflame will watch this directory for your React source code and deploy changes
+  // instantly.
+  "sourceDirectory": "app",
+  // Reflame will use this to keep your app up to date as we make improvements.
+  "foundation": {
+    "name": "ts-react",
+    "version": 2
+  },
+  "libraries": {
+    "testing": {
+      "rootDirectory": "testing",
+      "sourceDirectory": "testing/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": true
+      }
+    },
+    "@radix-ui/number": {
+      "rootDirectory": "packages/core/number",
+      "sourceDirectory": "packages/core/number/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/rect": {
+      "rootDirectory": "packages/core/rect",
+      "sourceDirectory": "packages/core/rect/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/primitive": {
+      "rootDirectory": "packages/core/primitive",
+      "sourceDirectory": "packages/core/primitive/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-accessible-icon": {
+      "rootDirectory": "packages/react/accessible-icon",
+      "sourceDirectory": "packages/react/accessible-icon/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-accordion": {
+      "rootDirectory": "packages/react/accordion",
+      "sourceDirectory": "packages/react/accordion/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-alert-dialog": {
+      "rootDirectory": "packages/react/alert-dialog",
+      "sourceDirectory": "packages/react/alert-dialog/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-announce": {
+      "rootDirectory": "packages/react/announce",
+      "sourceDirectory": "packages/react/announce/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-arrow": {
+      "rootDirectory": "packages/react/arrow",
+      "sourceDirectory": "packages/react/arrow/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-aspect-ratio": {
+      "rootDirectory": "packages/react/aspect-ratio",
+      "sourceDirectory": "packages/react/aspect-ratio/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-avatar": {
+      "rootDirectory": "packages/react/avatar",
+      "sourceDirectory": "packages/react/avatar/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-checkbox": {
+      "rootDirectory": "packages/react/checkbox",
+      "sourceDirectory": "packages/react/checkbox/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-collapsible": {
+      "rootDirectory": "packages/react/collapsible",
+      "sourceDirectory": "packages/react/collapsible/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-collection": {
+      "rootDirectory": "packages/react/collection",
+      "sourceDirectory": "packages/react/collection/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-compose-refs": {
+      "rootDirectory": "packages/react/compose-refs",
+      "sourceDirectory": "packages/react/compose-refs/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-context": {
+      "rootDirectory": "packages/react/context",
+      "sourceDirectory": "packages/react/context/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-context-menu": {
+      "rootDirectory": "packages/react/context-menu",
+      "sourceDirectory": "packages/react/context-menu/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-dialog": {
+      "rootDirectory": "packages/react/dialog",
+      "sourceDirectory": "packages/react/dialog/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-direction": {
+      "rootDirectory": "packages/react/direction",
+      "sourceDirectory": "packages/react/direction/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-dismissable-layer": {
+      "rootDirectory": "packages/react/dismissable-layer",
+      "sourceDirectory": "packages/react/dismissable-layer/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      },
+      "npmPackages": {
+        "react-remove-scroll": "2.5.5"
+      }
+    },
+    "@radix-ui/react-dropdown-menu": {
+      "rootDirectory": "packages/react/dropdown-menu",
+      "sourceDirectory": "packages/react/dropdown-menu/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-focus-guards": {
+      "rootDirectory": "packages/react/focus-guards",
+      "sourceDirectory": "packages/react/focus-guards/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-focus-scope": {
+      "rootDirectory": "packages/react/focus-scope",
+      "sourceDirectory": "packages/react/focus-scope/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-form": {
+      "rootDirectory": "packages/react/form",
+      "sourceDirectory": "packages/react/form/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-hover-card": {
+      "rootDirectory": "packages/react/hover-card",
+      "sourceDirectory": "packages/react/hover-card/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-id": {
+      "rootDirectory": "packages/react/id",
+      "sourceDirectory": "packages/react/id/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-label": {
+      "rootDirectory": "packages/react/label",
+      "sourceDirectory": "packages/react/label/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-menu": {
+      "rootDirectory": "packages/react/menu",
+      "sourceDirectory": "packages/react/menu/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-menubar": {
+      "rootDirectory": "packages/react/menubar",
+      "sourceDirectory": "packages/react/menubar/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-navigation-menu": {
+      "rootDirectory": "packages/react/navigation-menu",
+      "sourceDirectory": "packages/react/navigation-menu/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-popover": {
+      "rootDirectory": "packages/react/popover",
+      "sourceDirectory": "packages/react/popover/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-popper": {
+      "rootDirectory": "packages/react/popper",
+      "sourceDirectory": "packages/react/popper/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-portal": {
+      "rootDirectory": "packages/react/portal",
+      "sourceDirectory": "packages/react/portal/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-presence": {
+      "rootDirectory": "packages/react/presence",
+      "sourceDirectory": "packages/react/presence/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-primitive": {
+      "rootDirectory": "packages/react/primitive",
+      "sourceDirectory": "packages/react/primitive/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-progress": {
+      "rootDirectory": "packages/react/progress",
+      "sourceDirectory": "packages/react/progress/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-radio-group": {
+      "rootDirectory": "packages/react/radio-group",
+      "sourceDirectory": "packages/react/radio-group/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-roving-focus": {
+      "rootDirectory": "packages/react/roving-focus",
+      "sourceDirectory": "packages/react/roving-focus/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-scroll-area": {
+      "rootDirectory": "packages/react/scroll-area",
+      "sourceDirectory": "packages/react/scroll-area/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-select": {
+      "rootDirectory": "packages/react/select",
+      "sourceDirectory": "packages/react/select/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-separator": {
+      "rootDirectory": "packages/react/separator",
+      "sourceDirectory": "packages/react/separator/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-slider": {
+      "rootDirectory": "packages/react/slider",
+      "sourceDirectory": "packages/react/slider/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      },
+      "npmPackages": {
+        "form-serialize": "^0.7.2"
+      }
+    },
+    "@radix-ui/react-slot": {
+      "rootDirectory": "packages/react/slot",
+      "sourceDirectory": "packages/react/slot/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-switch": {
+      "rootDirectory": "packages/react/switch",
+      "sourceDirectory": "packages/react/switch/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-tabs": {
+      "rootDirectory": "packages/react/tabs",
+      "sourceDirectory": "packages/react/tabs/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-toast": {
+      "rootDirectory": "packages/react/toast",
+      "sourceDirectory": "packages/react/toast/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-toggle": {
+      "rootDirectory": "packages/react/toggle",
+      "sourceDirectory": "packages/react/toggle/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-toggle-group": {
+      "rootDirectory": "packages/react/toggle-group",
+      "sourceDirectory": "packages/react/toggle-group/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-toolbar": {
+      "rootDirectory": "packages/react/toolbar",
+      "sourceDirectory": "packages/react/toolbar/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-tooltip": {
+      "rootDirectory": "packages/react/tooltip",
+      "sourceDirectory": "packages/react/tooltip/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-use-callback-ref": {
+      "rootDirectory": "packages/react/use-callback-ref",
+      "sourceDirectory": "packages/react/use-callback-ref/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-use-controllable-state": {
+      "rootDirectory": "packages/react/use-controllable-state",
+      "sourceDirectory": "packages/react/use-controllable-state/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-use-escape-keydown": {
+      "rootDirectory": "packages/react/use-escape-keydown",
+      "sourceDirectory": "packages/react/use-escape-keydown/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-use-layout-effect": {
+      "rootDirectory": "packages/react/use-layout-effect",
+      "sourceDirectory": "packages/react/use-layout-effect/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-use-previous": {
+      "rootDirectory": "packages/react/use-previous",
+      "sourceDirectory": "packages/react/use-previous/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-use-rect": {
+      "rootDirectory": "packages/react/use-rect",
+      "sourceDirectory": "packages/react/use-rect/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-use-size": {
+      "rootDirectory": "packages/react/use-size",
+      "sourceDirectory": "packages/react/use-size/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    },
+    "@radix-ui/react-visually-hidden": {
+      "rootDirectory": "packages/react/visually-hidden",
+      "sourceDirectory": "packages/react/visually-hidden/src",
+      "storybookCompatibility": {
+        "testStories": true
+      },
+      "nodejsCompatibility": {
+        "packageJson": {
+          "exportsDetection": {
+            "ignoreTopLevelDirectory": true
+          }
+        }
+      }
+    }
+  },
+  // NPM packages listed here will be installed by Reflame every time you update this file.
+  //
+  // It's important to only include packages that will be used by your app in browsers here.
+  // Including dev-time dependencies that run in node can result in deploy failures and poor
+  // performance.
+  "npmPackages": {
+    // // Specify npm packages in the same format as you would with package.json
+    // "framer-motion": "^6.2.8",
+  }
+}

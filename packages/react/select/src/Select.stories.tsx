@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { css } from '../../../../stitches.config';
+import { css } from 'testing/stitches.config';
 import * as Select from '@radix-ui/react-select';
 import { Label } from '@radix-ui/react-label';
 import * as Dialog from '@radix-ui/react-dialog';
-import { foodGroups } from '../../../../test-data/foods';
+import { foodGroups } from 'testing/foods';
 
 export default { title: 'Components/Select' };
 
